@@ -3,7 +3,7 @@
 
 namespace
 {
-class HttpClient
+class TCPClient
 {
 private:
     boost::asio::io_context         _io_context;
@@ -13,6 +13,12 @@ private:
     std::string _key;
     std::string _host;
     std::string _port;
+
+    void read_config();
+
+private:
+    TCPClient();
+
 
 };
 }
