@@ -1,6 +1,6 @@
 
 find_package(Boost REQUIRED)
-add_library(OpenWeatherMapClient STATIC WeatherClient.cpp)
+add_library(OpenWeatherMapClient STATIC WeatherClient.cpp client.cpp)
 target_link_libraries(OpenWeatherMapClient PUBLIC Boost::boost)
 
 
