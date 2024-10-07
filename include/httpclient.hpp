@@ -48,8 +48,6 @@ public:
 };
 
 } // namespace WeatherApp::NetWork
-// namespace WeatherApp.
-
 
 
 #endif //CLIENT_H

@@ -85,7 +85,7 @@ void WeatherApp::NetWork::HttpClient::connect()
 
 void WeatherApp::NetWork::HttpClient::create_request(const std::string& city, const std::string& token)
 {
-    std::string request_string = "/data/2.5/weather?q=" + city + "&appid="+ token;
+    std::string request_string = "/data/2.5/weather?q=" + city + "&appid="+ token + "&units=metric";
     boost::beast::http::request<boost::beast::http::string_body> request (boost::beast::http::verb::get,
                                                                           request_string,
                                                                           11);
